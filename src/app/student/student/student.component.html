@@ -1,0 +1,9 @@
+<h1>Student form</h1>
+
+<form [formGroup]="studentForm" (ngSubmit)="submitForm(studentForm.value)" >
+    <label for="name">Imię</label>
+    <input type="text" id="name" name="name" formControlName="name">
+    <label for="lastName">Nazwisko</label>
+    <input type="text" id="lastName" name="lastName" formControlName="lastName">
+    <input type="submit" value="Wyślij">
+</form>
